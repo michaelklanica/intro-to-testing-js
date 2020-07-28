@@ -7,6 +7,6 @@ function helloWorld() {
 //     return "Hello, World!";
 // }
 
-function sayHello(x) {
-    return toString(x);
+function sayHello() {
+    return "Hello, Jane";
 }
