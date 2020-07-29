@@ -8,8 +8,12 @@ function helloWorld() {
 // }
 
 function sayHello(input) {
-    if (typeof input === "undefined") {
-        return "Hello, World";
+    if (typeof input === "string" && input !== "" && !parseFloat(input)) {
+        return "Hello, " + input;
     }
-    return "Hello, " + input;
+    return "Hello, World";
+}
+
+function isFive() {
+
 }

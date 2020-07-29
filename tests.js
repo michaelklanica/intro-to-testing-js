@@ -33,4 +33,31 @@ describe('sayHello', function() {
     it('should return a string "Hello, World" when nothing is passed into the function', function() {
         expect(sayHello()).toBe("Hello, World");
     });
+    it('should return a string "Hello, World" when true', function() {
+        expect(sayHello(true)).toBe("Hello, World");
+    });
+    it('should return a string "Hello, World" when false', function() {
+        expect(sayHello(false)).toBe("Hello, World");
+    });
+    it('should return a string "Hello, World" when null is passed', function() {
+        expect(sayHello(null)).toBe("Hello, World");
+    });
+    it('should return a string "Hello, World" when empty string is passed', function() {
+        expect(sayHello("")).toBe("Hello, World");
+    });
+    it('should return a string "Hello, World" when 5 is passed', function() {
+        expect(sayHello(5)).toBe("Hello, World");
+    });
+    it('should return a string "Hello, World" when "5" is passed', function() {
+        expect(sayHello("5")).toBe("Hello, World");
+    });
+    it('should return a string "Hello, World" when an array is passed', function() {
+        expect(sayHello([1, 2, 3])).toBe("Hello, World");
+    });
+});
+
+describe('isFive', function() {
+    it("should be a defined function", function() {
+        expect(typeof isFive).toBe('function');
+    });
 });
