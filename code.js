@@ -14,6 +14,9 @@ function sayHello(input) {
     return "Hello, World";
 }
 
-function isFive() {
-
+function isFive(x) {
+    if (x === 5 || x === "5") {
+        return true;
+    }
+    return false;
 }

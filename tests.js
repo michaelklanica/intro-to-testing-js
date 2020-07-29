@@ -60,4 +60,16 @@ describe('isFive', function() {
     it("should be a defined function", function() {
         expect(typeof isFive).toBe('function');
     });
+    it('should return a boolean when called', function() {
+        expect(typeof isFive()).toBe("boolean");
+    });
+    it('should return true when 5 is passed', function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return true when "5" is passed', function() {
+        expect(isFive("5")).toBe(true);
+    });
+    it('should return false when 6 is passed', function() {
+        expect(isFive(6)).toBe(false);
+    });
 });
