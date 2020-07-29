@@ -21,13 +21,16 @@ describe('sayHello', function() {
     it('should return a string when called', function() {
         expect(typeof sayHello()).toBe("string");
     });
-    it('should return a string "Hello, Jane" when called', function() {
+    it('should return a string "Hello, Jane" when "Jane" is passed into the function', function() {
         expect(sayHello("Jane")).toBe("Hello, Jane");
     });
-    it('should return a string "Hello, Alex" when called', function() {
+    it('should return a string "Hello, Alex" when "Alex" is passed into the function', function() {
         expect(sayHello("Alex")).toBe("Hello, Alex");
     });
-    it('should return a string "Hello, Pat" when called', function() {
+    it('should return a string "Hello, Pat" when "Pat" is passed into the function', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat");
     });
-})
+    it('should return a string "Hello, World" when nothing is passed into the function', function() {
+        expect(sayHello()).toBe("Hello, World");
+    });
+});
