@@ -12,7 +12,9 @@ function sayHello(input) {
         return "Hello, Alex";
     } else if (input === "Pat") {
         return "Hello, Pat";
+    } else if (input === "Jane") {
+        return "Hello, Jane";
     } else {
-        return "Hello, Jane"
+        return "";
     }
 }
