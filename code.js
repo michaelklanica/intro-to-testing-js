@@ -20,3 +20,10 @@ function isFive(x) {
     }
     return false;
 }
+
+function isEven(x) {
+    if (typeof x !== "boolean" && x % 2 === 0) {
+        return true;
+    }
+    return false;
+}
