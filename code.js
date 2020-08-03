@@ -27,3 +27,16 @@ function isEven(x) {
     }
     return false;
 }
+
+function isVowel(x) {
+    if (typeof x === "string" && (x.toUpperCase() === "A" || x.toUpperCase() === "E" || x.toUpperCase() === "I" || x.toUpperCase() === "O" || x.toUpperCase() === "U")) {
+        return true;
+    }
+    return false;
+}
+
+function add(x, y) {
+    var result = parseFloat(x) + parseFloat(y);
+
+    return result;
+}
